@@ -9,16 +9,16 @@ OpenWeatherMapからネス湖の気象情報と予報を取得してトゥート
 1. [Mastodon.py](https://github.com/halcy/Mastodon.py)をインストールする。
 2. 任意のマストドンインスタンスでアカウントをつくる
 3. mastodon.setting.templ を mastodon.setting にリネームして、次の値を設定する。
-  * api\_base\_url: マストドンインスタンスのURL
-  * email: アカウントのメールアドレス
-  * passwd: アカウントのパスワード
+    * api\_base\_url: マストドンインスタンスのURL
+    * email: アカウントのメールアドレス
+    * passwd: アカウントのパスワード
 4. tooter.py の register\_app() を実行して、アプリを登録してクライアントIDを取得する。
-  * client\_id に設定したファイルにクライアントIDが記録される。
+    * client\_id に設定したファイルにクライアントIDが記録される。
 5. tooter.py の fetch\_token() を実行して、トークンを取得する。
-  * access\_token に設定したファイルにトークンが記録される。
+    * access\_token に設定したファイルにトークンが記録される。
 6. [OpenWeatherMap](https://openweathermap.org/)でアカウントを作ってAPIアクセスキーを取得する
 7. owm.setting.templ を owm.setting にリネームして、次の値を設定する。
-  * API\_KEY: APIアクセスキー
+    * API\_KEY: APIアクセスキー
 
 ## 実行方法
 
